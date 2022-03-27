@@ -11,6 +11,9 @@ namespace Linked_List
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Linked List Program");
+            Node node_one = new Node(56);
+            Node node_two = new Node(30);
+            Node node_three = new Node(70);
         } 
     }
 }
