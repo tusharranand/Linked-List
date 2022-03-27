@@ -39,5 +39,19 @@ namespace Linked_List
                 Console.WriteLine("\n");
             }
         }
+        public void AddNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                node.Next = Head;
+                Head = node;
+            }
+
+        }
     }
 }
