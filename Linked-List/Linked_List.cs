@@ -53,5 +53,18 @@ namespace Linked_List
             }
 
         }
+        public void AppendNode(Node node)
+        {
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                Tail.Next = node;
+                Tail = node;
+            }
+        }
     }
 }

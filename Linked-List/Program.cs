@@ -17,11 +17,11 @@ namespace Linked_List
             Node node_two = new Node(30);
             Node node_three = new Node(70);
 
-            linked_list.AddNode(node_three);
-            linked_list.AddNode(node_two);
-            linked_list.AddNode(node_one);
+            linked_list.AppendNode(node_one);
+            linked_list.AppendNode(node_two);
+            linked_list.AppendNode(node_three);
 
             linked_list.Display();
-        } 
+        }
     }
 }
