@@ -66,5 +66,19 @@ namespace Linked_List
                 Tail = node;
             }
         }
+        public void AddBetween(int Prev_Data, int Next_Data, Node node)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.Data == Prev_Data && temp.Next.Data == Next_Data)
+                {
+                    node.Next = temp.Next;
+                    temp.Next = node;
+                    break;
+                }
+                temp = temp.Next;
+            }
+        }
     }
 }
