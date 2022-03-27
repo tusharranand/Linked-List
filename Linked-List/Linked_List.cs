@@ -80,5 +80,18 @@ namespace Linked_List
                 temp = temp.Next;
             }
         }
+        public void Delete_First()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("List already empty, nothing to delete.");
+            }
+            else
+            {
+                Node temp = Head;
+                Head = Head.Next;
+                Console.WriteLine("The node with value {0} was deleted.", temp.Data);
+            }
+        }
     }
 }
