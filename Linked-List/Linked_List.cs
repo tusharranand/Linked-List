@@ -122,5 +122,19 @@ namespace Linked_List
             }
             return false;
         }
+        public void AddAfter(int Data, Node node)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.Data == Data)
+                {
+                    node.Next = temp.Next;
+                    temp.Next = node;
+                    break;
+                }
+                temp = temp.Next;
+            }
+        }
     }
 }

@@ -30,6 +30,13 @@ namespace Linked_List
                 Console.WriteLine("Data exists in the linked list.\n");
             else
                 Console.WriteLine("Data does not exist in the linked list.\n");
+
+            Node node_four = new Node(40);
+            Console.Write("Enter the number after which you want to add: ");
+            Data = Convert.ToInt32(Console.ReadLine());
+            linked_list.AddAfter(Data, node_four);
+            linked_list.Display();
+
         }
     }
 }
