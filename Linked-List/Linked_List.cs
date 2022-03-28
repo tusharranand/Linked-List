@@ -136,5 +136,18 @@ namespace Linked_List
                 temp = temp.Next;
             }
         }
+        public void DeleteSpecific(int Data)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.Next.Data == Data)
+                {
+                    temp.Next = temp.Next.Next;
+                    break;
+                }
+                temp = temp.Next;
+            }
+        }
     }
 }
