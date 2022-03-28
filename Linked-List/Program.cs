@@ -23,8 +23,13 @@ namespace Linked_List
 
             linked_list.Display();
 
-            linked_list.Delete_Last();
-            linked_list.Display();
+            Console.Write("Enter the number you want to find: ");
+            int Data = Convert.ToInt32(Console.ReadLine());
+            bool Result = linked_list.Search(Data);
+            if (Result)
+                Console.WriteLine("Data exists in the linked list.\n");
+            else
+                Console.WriteLine("Data does not exist in the linked list.\n");
         }
     }
 }

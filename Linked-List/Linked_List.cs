@@ -111,5 +111,16 @@ namespace Linked_List
                 temp.Next = null;
             }
         }
+        public bool Search(int Data)
+        {
+            Node temp = Head;
+            while (temp != null)
+            {
+                if (temp.Data == Data)
+                    return true;
+                temp = temp.Next;
+            }
+            return false;
+        }
     }
 }
