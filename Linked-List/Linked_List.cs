@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -146,6 +146,25 @@ namespace Linked_List
                     temp.Next = temp.Next.Next;
                     break;
                 }
+                temp = temp.Next;
+            }
+        }
+        public void Sort()
+        {
+            Node temp = Head;
+            ArrayList Sort = new ArrayList();
+            while (temp != null)
+            {
+                Sort.Add(temp.Data);
+                temp = temp.Next;
+            }
+            Sort.Sort();
+            temp = Head;
+            int i = 0;
+            while (temp != null)
+            {
+                temp.Data = (int)Sort[i];
+                i++;
                 temp = temp.Next;
             }
         }

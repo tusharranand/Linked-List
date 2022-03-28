@@ -37,11 +37,13 @@ namespace Linked_List
             linked_list.AddAfter(Data, node_four);
             linked_list.Display();
 
+            linked_list.Sort();
+            linked_list.Display();
+
             Console.Write("Enter the data you want to delete: ");
             Data = Convert.ToInt32(Console.ReadLine());
             linked_list.DeleteSpecific(Data);
             linked_list.Display();
-
         }
     }
 }
