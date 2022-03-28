@@ -23,7 +23,7 @@ namespace Linked_List
 
             linked_list.Display();
 
-            linked_list.Delete_First();
+            linked_list.Delete_Last();
             linked_list.Display();
         }
     }

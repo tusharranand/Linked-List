@@ -93,5 +93,23 @@ namespace Linked_List
                 Console.WriteLine("The node with value {0} was deleted.", temp.Data);
             }
         }
+        public void Delete_Last()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("List already empty, nothing to delete.");
+            }
+            else
+            {
+                Node temp = Head;
+                while (temp.Next.Next != null)
+                {
+                    temp = temp.Next;
+                }
+                Tail = temp;
+                Console.WriteLine("The node with value {0} was deleted.", temp.Next.Data);
+                temp.Next = null;
+            }
+        }
     }
 }
